@@ -1,0 +1,27 @@
+main{
+    background-image: linear-gradient(#84407b, #edc5bd);
+
+    height: 100vh;
+}
+
+.container-lg.form-search{
+    /* border-radius: 20px; */
+    max-width: 450px;
+    padding: 20px;
+    background: 
+    linear-gradient(#fff, #fff) padding-box,
+    linear-gradient(to bottom, #fcf9c2, #cbe5c0) border-box;
+    border-radius: 20px;
+    border: 4px solid transparent;
+}
+
+.btn.button-search{
+    background-color: #4acabb;
+    border-color: #56f5e2;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+}
