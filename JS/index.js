@@ -2,10 +2,15 @@ var httpRequest;
 
 function handleSubmit(){
     let cep = document.getElementById("cepField").value;
+    let validacep = /^[0-9]{8}$/;
 
     if(cep == ""){
         alert("Por favor digite um CEP válido");
         return;
+    }
+
+    if(!validacep.test(cep)){
+        alert('cep invalido');
     }
 
     //let url = "https://viacep.com.br/ws/" + cep + "/json/";
@@ -48,6 +53,7 @@ function insertData() {
             document.getElementById("rua").innerText = `Logradouro: ${data.rua}`;
             document.getElementById("bairro").innerText = `Bairro: ${data.bairro}`;
             document.getElementById("cidade").innerText = `Localidade: ${data.cidade} - ${data.uf}`;
+            document.getElementById('rua').value = ("cepField");
         } else {
         alert('Tivemos um problema com a requisição.');
         }
